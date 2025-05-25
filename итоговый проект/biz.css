@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Anton+SC&family=Comfortaa:wght@300..700&family=Dosis:wght@200..800&family=Mountains+of+Christmas:wght@400;700&family=Permanent+Marker&family=Playwrite+VN:wght@100..400&family=Single+Day&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', Tahoma, Geneva sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Шапка */
+header {
+    background-color: #4657a0;
+    color: rgb(255, 246, 246);
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(138, 124, 124, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ffd700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 1s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: fadeIn 1.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+/* Заголовки */
+.main-title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.section-title {
+    text-align: center;
+    color: #34495e;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Изображение */
+.image {
+    width: 100%;
+    height: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.image:hover {
+    transform: scale(1.01);
+}
+
+/* Направления бизнеса */
+.business-section {
+    margin-top: 20px;
+}
+
+.business-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.business-card {
+    padding: 25px;
+    border-radius: 15px;
+    width: 180px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #bbc6f7, #9d94d8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.business-card:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.business-icon {
+    font-size: 50px;
+    display: block;
+}
+
+.business-name {
+    color: #2c3e50;
+}
+
+/* Описание курса */
+.description-section {
+    margin-top: 20px;
+}
+
+.course-description {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #333;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #bbc6f7, #9d94d8);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.description-text {
+    margin-bottom: 10px;
+}
+
+.features-list {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feature-item {
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+/* Кнопка */
+.btn {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.textvbtn {
+    display: inline-block;
+    width: 250px;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.textvbtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #2575fc 0%, #6a11cb 100%);
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Подвал */
+footer {
+    background-color: #2d3748;
+    color: white;
+    padding: 50px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #a0aec0;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: white;
+}
+
+.niz {
+    text-align: center;
+    padding-top: 20px;
+    color: #a0aec0;
+    font-size: 14px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .business-container {
+        gap: 20px;
+    }
+    
+    .business-card {
+        width: 150px;
+        padding: 20px;
+    }
+    
+    .course-description {
+        padding: 25px;
+    }
+    
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0;
+    }
+    
+    .image {
+        height: 250px;
+    }
+    
+    .business-card {
+        width: 120px;
+        padding: 15px;
+    }
+    
+    .business-icon {
+        font-size: 40px;
+    }
+    
+    .textvbtn {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+
+.a1{
+    text-decoration: none;
+    color: #f5f7fa;
+}

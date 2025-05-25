@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poiret+One&display=swap");
+
+* {
+	box-sizing: border-box;
+	font-family: "Poiret One", sans-serif;
+}
+
+header,
+main,
+footer {
+	width: 768px;
+	margin: 15px auto;
+}
+
+header,
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-family: "Pacifico", cursive;
+	font-size: 38px;
+	background: #121fcf;
+	/* Разберись сам, как это работает :)
+	   Цвета можно подобрать свои :) */
+	background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+header img {
+	height: 70px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 512px;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: auto;
+    gap: 8px;
+}
+
+ul li a {
+    border-radius: 8px;
+    border-style: solid;
+    border-color: aliceblue;
+    display: block;
+    padding-top:16px;
+    padding-bottom: 16px;
+}
+
+.photo {
+/* тут конечно же стили для фото, всё должно быть красиво */
+}
+
+footer p {
+	font-size: 12px;
+}
+
+/* 
+Ниже пиши стили для фильтров в следующем формате:
+.filter1 {} 
+.filter2 {} 
+и т.д. 
+*/
+
+/* Если все фильтры уже придумал, не забудь настроить красивые анимации 
+и режим адаптивности для нашего проекта :) */
